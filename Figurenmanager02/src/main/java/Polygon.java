@@ -1,13 +1,7 @@
-class Circle extends Figure{
+public class Polygon extends DrawFigure{
 
-    double radius;
-    int xOfCenter;
-    int yOfCenter;
+    public Polygon() {
 
-    public Circle(int xOfCenter, int yOfCenter, int radius) {
-        this.radius = radius;
-        this.xOfCenter = xOfCenter;
-        this.yOfCenter = yOfCenter;
     }
 
     @Override
@@ -24,5 +18,4 @@ class Circle extends Figure{
     public String output() {
         return "Kreis mit Radius " + this.radius + ":\nFläche > " + area() + "\nUmfang > " + circumfence();
     }
-
 }
